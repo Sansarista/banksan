@@ -17,7 +17,7 @@ export default function CTA() {
             Are you ready to experience a smarter way to manage your finances? Try our platform today!
           </p>
           
-          <button className="bg-lime-500 hover:bg-lime-600 text-gray-900 font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center gap-2">
+          <button className="bg-[#d6f871] hover:bg-[#c4e95c] text-gray-900 font-medium py-3 px-8 rounded-full transition duration-300 inline-flex items-center gap-2">
             Get Started
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
