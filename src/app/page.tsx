@@ -1,7 +1,10 @@
+import Hero from "@/components/sections/Hero"
+import Stats from "@/components/sections/Stats"
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold">Banksan</h1>
-    </div>
+    <>
+          <Hero/>
+    </>
   )
 }
