@@ -9,7 +9,7 @@ export default function Stats() {
   }, [])
 
   return (
-    <section className="py-16 bg-[#d6f871]">
+    <section className="py-16 bg-gradient-to-b from-[#d6f871] to-white">
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Users stat */}
