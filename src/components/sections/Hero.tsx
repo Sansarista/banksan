@@ -402,7 +402,7 @@ export default function Hero() {
                   <span className="block mb-2 text-white text-opacity-90">Redefining</span>
                 </div>
                 <div className="relative">
-                  <span className="block mb-2 text-white text-opacity-90">Your <span className="text-[#d6f871] font-normal">Financial</span></span>
+                  <span className="block mb-2 text-white text-opacity-90">Your <span className="text-[#d6f871] font-normal font-logo">Financial</span></span>
                 </div>
                 <div className="relative">
                   <span className="block text-white text-opacity-90">Experience</span>
@@ -417,7 +417,7 @@ export default function Hero() {
             
             {/* Feature points - centered grid on mobile */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10 max-w-lg mx-auto lg:mx-0">
-              <div className="flex items-start gap-3 text-zinc-300 group">
+              <div className="flex items-start gap-3 text-zinc-300 group cursor-pointer">
                 <div className="mt-1 p-1.5 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-[#d6f871]/50 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#d6f871]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -425,7 +425,7 @@ export default function Hero() {
                 </div>
                 <p className="text-sm opacity-90 group-hover:text-[#d6f871] transition-colors text-left">Advanced security with biometric authentication</p>
               </div>
-              <div className="flex items-start gap-3 text-zinc-300 group">
+              <div className="flex items-start gap-3 text-zinc-300 group cursor-pointer">
                 <div className="mt-1 p-1.5 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-[#d6f871]/50 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#d6f871]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -433,7 +433,7 @@ export default function Hero() {
                 </div>
                 <p className="text-sm opacity-90 group-hover:text-[#d6f871] transition-colors text-left">Real-time insights for better money management</p>
               </div>
-              <div className="flex items-start gap-3 text-zinc-300 group">
+              <div className="flex items-start gap-3 text-zinc-300 group cursor-pointer">
                 <div className="mt-1 p-1.5 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-[#d6f871]/50 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#d6f871]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -441,7 +441,7 @@ export default function Hero() {
                 </div>
                 <p className="text-sm opacity-90 group-hover:text-[#d6f871] transition-colors text-left">Instant transfers anywhere in the world</p>
               </div>
-              <div className="flex items-start gap-3 text-zinc-300 group">
+              <div className="flex items-start gap-3 text-zinc-300 group cursor-pointer">
                 <div className="mt-1 p-1.5 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-[#d6f871]/50 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#d6f871]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
@@ -451,7 +451,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center lg:justify-start gap-8">
-              <button className="relative group px-7 py-3.5 bg-gradient-to-r from-[#c5e861] to-[#d6f871] hover:from-[#d6f871] hover:to-[#e3ff7e] rounded-full text-sm font-medium text-zinc-900 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#d6f871]/20">
+              <button className="relative group px-7 py-3.5 bg-gradient-to-r from-[#c5e861] to-[#d6f871] hover:from-[#d6f871] hover:to-[#e3ff7e] rounded-full text-sm font-medium text-zinc-900 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#d6f871]/20 cursor-pointer">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Get Started
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
