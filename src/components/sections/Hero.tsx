@@ -460,7 +460,7 @@ export default function Hero() {
                 </span>
                 <div className="absolute inset-0 w-full h-full bg-white/10 opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </button>
-              <a className="text-white text-sm font-medium cursor-pointer hover:underline" href="#motto">Check Our Motto</a>
+              <a className="text-white text-sm font-medium cursor-pointer hover:underline" href="#features">Check Our Features</a>
             </div>
           </div>
           <div className={`w-full lg:w-2/5 mt-8 md:mt-10 lg:mt-0 transition-all duration-1000 delay-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
