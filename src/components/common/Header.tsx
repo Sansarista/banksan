@@ -71,7 +71,7 @@ export default function Header() {
             <div className="flex items-center">
               <div className="w-10 h-10 relative mr-2">
                 <Image 
-                  src="/b.svg" 
+                  src="/b-cropped.svg" 
                   alt="Banksan" 
                   fill
                   priority
