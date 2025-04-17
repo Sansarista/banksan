@@ -290,7 +290,7 @@ export default function Privileges() {
                                     </p>
                                 </div>
                                 
-                                <div className="relative mt-8 mb-8 sm:-mt-[150px] md:-mt-[250px]">
+                                <div className="relative mb-16 -mt-10 scale-125 lg:scale-100">
                                     <div className="w-full relative h-[220px] flex items-center justify-center">
                                         <div className="absolute inset-0 flex items-center justify-center">
                                             <div className="relative w-full max-w-md flex justify-center">
