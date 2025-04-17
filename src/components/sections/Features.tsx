@@ -18,7 +18,7 @@ export default function Features() {
       title: "Sync your bank, wallet, or cards securely",
       description: "Create a custom card that reflects your unique style and/or personality. Choose from a range of colors, patterns, and designs to customize the look of your card.",
       icon: (
-        <svg className="w-6 h-6 text-lime-600" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-6 h-6 text-[#d6f871]" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
         </svg>
       )
@@ -28,7 +28,7 @@ export default function Features() {
       title: "Get AI-driven insights to manage spending and grow wealth",
       description: "Track your spending patterns, analyze income or expenses easily, and receive personalized recommendations to optimize your financial decisions.",
       icon: (
-        <svg className="w-6 h-6 text-lime-600" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-6 h-6 text-[#d6f871]" fill="currentColor" viewBox="0 0 20 20">
           <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
           <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
         </svg>
@@ -39,7 +39,7 @@ export default function Features() {
       title: "Effortless money transfers",
       description: "Send money instantly to friends and family, pay bills automatically, and manage your recurring payments in one place.",
       icon: (
-        <svg className="w-6 h-6 text-lime-600" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-6 h-6 text-[#d6f871]" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
         </svg>
       )
@@ -53,10 +53,10 @@ export default function Features() {
   ]
 
   return (
-    <section id="features" className="py-16 md:py-24 bg-gray-50">
+    <section id="features" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Simple, Fast & Hassle-Free</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-logo mb-6">Simple, Fast & Hassle-Free</h2>
           <p className="text-gray-600">
             We've combined accessibility and design features to deliver the best banking experience on the planet.
           </p>
@@ -71,13 +71,13 @@ export default function Features() {
                   key={feature.id}
                   className={`rounded-lg p-6 cursor-pointer transition-all duration-300 ${
                     activeTab === index 
-                      ? 'bg-white shadow-lg border-l-4 border-lime-500' 
+                      ? 'bg-white shadow-lg border-l-4 border-[#d6f871]' 
                       : 'hover:bg-white hover:shadow-md'
                   }`}
                   onClick={() => setActiveTab(index)}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`p-3 rounded-lg ${activeTab === index ? 'bg-lime-100' : 'bg-gray-100'}`}>
+                    <div className={`p-3 rounded-lg ${activeTab === index ? 'bg-[#d6f871]/20' : 'bg-gray-100'}`}>
                       {feature.icon}
                     </div>
                     
@@ -95,13 +95,13 @@ export default function Features() {
           <div className="relative">
             {activeTab === 0 && (
               <div className="bg-white p-8 rounded-2xl shadow-xl relative">
-                <div className="absolute -top-12 -right-4 w-24 h-24 bg-lime-100 rounded-full opacity-30"></div>
-                <div className="absolute -bottom-8 -left-4 w-16 h-16 bg-lime-100 rounded-full opacity-30"></div>
+                <div className="absolute -top-12 -right-4 w-24 h-24 bg-[#d6f871]/20 rounded-full opacity-30"></div>
+                <div className="absolute -bottom-8 -left-4 w-16 h-16 bg-[#d6f871]/20 rounded-full opacity-30"></div>
                 
                 <div className="flex items-start justify-between mb-6">
                   <div>
                     <div className="flex items-center gap-2">
-                      <div className="w-10 h-10 rounded-lg bg-lime-600 flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-lg bg-[#d6f871] flex items-center justify-center">
                         <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
                           <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
@@ -173,7 +173,7 @@ export default function Features() {
                           <div className="w-1/6 h-[40%] bg-gray-200 rounded-t-md mx-1"></div>
                           <div className="w-1/6 h-[60%] bg-gray-200 rounded-t-md mx-1"></div>
                           <div className="w-1/6 h-[30%] bg-gray-200 rounded-t-md mx-1"></div>
-                          <div className="w-1/6 h-[70%] bg-lime-500 rounded-t-md mx-1"></div>
+                          <div className="w-1/6 h-[70%] bg-[#d6f871] rounded-t-md mx-1"></div>
                           <div className="w-1/6 h-[45%] bg-gray-200 rounded-t-md mx-1"></div>
                           <div className="w-1/6 h-[50%] bg-gray-200 rounded-t-md mx-1"></div>
                         </div>
@@ -237,8 +237,8 @@ export default function Features() {
             {activeTab === 2 && (
               <div className="bg-white p-8 rounded-2xl shadow-xl">
                 <div className="text-center mb-8">
-                  <div className="w-16 h-16 bg-lime-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-lime-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-16 h-16 bg-[#d6f871]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-[#d6f871]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -251,7 +251,7 @@ export default function Features() {
                     <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-700">AK</div>
                     <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-700">BL</div>
                     <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-700">CP</div>
-                    <div className="w-12 h-12 bg-lime-600 rounded-full flex items-center justify-center text-white">
+                    <div className="w-12 h-12 bg-[#d6f871] rounded-full flex items-center justify-center text-white">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                       </svg>
@@ -274,7 +274,7 @@ export default function Features() {
                           <div className="text-xs text-gray-500">@johndoe</div>
                         </div>
                       </div>
-                      <div className="text-lime-600 font-medium text-sm">
+                      <div className="text-[#d6f871] font-medium text-sm">
                         <svg className="w-5 h-5 inline-block mr-1" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -282,7 +282,7 @@ export default function Features() {
                       </div>
                     </div>
                     
-                    <button className="w-full bg-lime-600 hover:bg-lime-700 text-white font-medium py-3 rounded-lg transition">
+                    <button className="w-full bg-[#d6f871] hover:bg-[#c4e95c] text-gray-900 font-medium py-3 rounded-lg transition">
                       Send Money
                     </button>
                   </div>
