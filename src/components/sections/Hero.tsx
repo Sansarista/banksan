@@ -450,9 +450,7 @@ export default function Hero() {
                 <p className="text-sm opacity-90 group-hover:text-[#d6f871] transition-colors text-left">Cloud-based access on any device</p>
               </div>
             </div>
-            
-            {/* CTA buttons - centered on mobile */}
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center lg:justify-start gap-8">
               <button className="relative group px-7 py-3.5 bg-gradient-to-r from-[#c5e861] to-[#d6f871] hover:from-[#d6f871] hover:to-[#e3ff7e] rounded-full text-sm font-medium text-zinc-900 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#d6f871]/20">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Get Started
@@ -462,15 +460,12 @@ export default function Hero() {
                 </span>
                 <div className="absolute inset-0 w-full h-full bg-white/10 opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </button>
+              <a className="text-white text-sm font-medium cursor-pointer hover:underline" href="#motto">Check Our Motto</a>
             </div>
           </div>
-          
-          {/* Card Stack Slider - completely redesigned */}
           <div className={`w-full lg:w-2/5 mt-8 md:mt-10 lg:mt-0 transition-all duration-1000 delay-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
             <div className="relative max-w-[300px] h-[320px] mx-auto">
-              {/* Card Stack */}
               <div className="relative h-full flex items-center justify-center">
-                {/* Cards */}
                 {cards.map((card, index) => {
                   const style = getCardStyle(card.variant)
                   const isActive = index === activeCard
