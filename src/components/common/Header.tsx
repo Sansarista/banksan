@@ -35,6 +35,7 @@ export default function Header() {
 
   useEffect(() => {
     const checkIfMobile = () => {
+      // Set mobile breakpoint to match Tailwind's md breakpoint (768px)
       setIsMobile(window.innerWidth < 768);
     };
     
@@ -56,6 +57,7 @@ export default function Header() {
       document.body.style.overflow = '';
     }
     
+    // Clean up function to reset overflow when component unmounts
     return () => {
       document.body.style.overflow = '';
     };
@@ -82,38 +84,34 @@ export default function Header() {
             </div>
         </Link>
         
-        {/* Mobile hamburger button */}
-        {isMobile && (
-          <button 
-            onClick={toggleMenu} 
-            className="md:hidden z-50 flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
-            aria-label="Toggle menu"
-          >
-            <span className={`block h-0.5 bg-white transition-all duration-300 ease-in-out ${isOpen ? 'w-5 translate-y-2 rotate-45' : 'w-6'}`}></span>
-            <span className={`block h-0.5 bg-white transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0' : 'w-4'}`}></span>
-            <span className={`block h-0.5 bg-white transition-all duration-300 ease-in-out ${isOpen ? 'w-5 -translate-y-2 -rotate-45' : 'w-6'}`}></span>
-          </button>
-        )}
+        {/* Mobile hamburger button - only visible on md and smaller screens */}
+        <button 
+          onClick={toggleMenu} 
+          className="md:hidden z-50 flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
+          aria-label="Toggle menu"
+        >
+          <span className={`block h-0.5 bg-white transition-all duration-300 ease-in-out ${isOpen ? 'w-5 translate-y-2 rotate-45' : 'w-6'}`}></span>
+          <span className={`block h-0.5 bg-white transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0' : 'w-4'}`}></span>
+          <span className={`block h-0.5 bg-white transition-all duration-300 ease-in-out ${isOpen ? 'w-5 -translate-y-2 -rotate-45' : 'w-6'}`}></span>
+        </button>
 
-        {!isMobile && (
-          <nav className="hidden md:flex flex-row justify-between items-center py-4 px-8 gap-8 bg-white/10 text-white rounded-full border border-white/10">
-            <ul className="flex flex-row justify-between items-center gap-8">
-                {navItems.map((item: any) => (
-                    <li key={item.path}>
-                        <Link href={item.path} className={`${pathname === item.path ? "text-primary hover:text-primary/80" : "text-white/60 hover:text-white"} font-logo font-medium`}>{item.label}</Link>
-                    </li>
-                ))}
-            </ul>
-          </nav>
-        )}
-
+        {/* Desktop navigation - visible on md and larger screens */}
+        <nav className="hidden md:flex flex-row justify-between items-center py-4 px-8 gap-8 bg-white/10 text-white rounded-full border border-white/10">
+          <ul className="flex flex-row justify-between items-center gap-8">
+              {navItems.map((item: any) => (
+                  <li key={item.path}>
+                      <Link href={item.path} className={`${pathname === item.path ? "text-primary hover:text-primary/80" : "text-white/60 hover:text-white"} font-logo font-medium`}>{item.label}</Link>
+                  </li>
+              ))}
+          </ul>
+        </nav>
 
         <div 
-          className={`fixed inset-0 flex flex-col bg-black/95 backdrop-blur-md z-40 transition-all duration-500 ease-in-out
+          className={`md:hidden fixed inset-0 flex flex-col bg-black/95 backdrop-blur-md z-40 transition-all duration-500 ease-in-out
             ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`
           }
         >
-          <div className="w-full h-full mx-auto mt-24 px-6 py-6">
+          <div className="w-full h-full mt-24 px-5 py-6">
             <nav className="h-full flex flex-col justify-between">
               <ul className="flex flex-col space-y-6 py-8">
                 {navItems.map((item, index) => (
@@ -157,18 +155,17 @@ export default function Header() {
                   >
                     Sign Up
                   </button>
-                  <p className="text-white/50 text-center text-sm mt-4">© {new Date().getFullYear()} Banksan. All rights reserved.</p>
+                  <p className="text-white/50 text-center text-sm mt-4">© {new Date().getFullYear()} <span className="font-logo font-bold">Banksan</span>. All rights reserved.</p>
                 </div>
               </div>
             </nav>
           </div>
         </div>
 
-        {!isMobile && (
-          <div className="hidden md:flex flex-row justify-between items-center gap-4">
-              <button className="bg-primary text-black rounded-full px-8 py-4 cursor-pointer hover:bg-white font-medium font-logo">Sign Up</button>
-          </div>
-        )}
+        {/* Desktop sign up button - visible on md and larger screens */}
+        <div className="hidden md:flex flex-row justify-between items-center gap-4">
+            <button className="bg-primary text-black rounded-full px-8 py-4 cursor-pointer hover:bg-white font-medium font-logo">Sign Up</button>
+        </div>
     </header>
   )
 }
