@@ -2,7 +2,7 @@
 
 :root {
   /* --background: #FDFDFD; */
-  --background: #000;
+  --background: #ced7d4;
   --foreground: #171717;
 }
 
@@ -20,4 +20,21 @@ body {
 
 .font-logo {
   font-family: var(--font-logo), 'Arial', sans-serif;
+}
+
+.custom-container {
+  width: 100%;
+  padding: 0 6rem;
+}
+
+@media (max-width: 768px) {
+  .custom-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-container {
+    padding: 0 1rem;
+  }
 }
