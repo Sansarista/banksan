@@ -47,14 +47,6 @@ export default function Stats() {
           ))}
         </div>
       </div>
-      
-      {/* Trusted By Section */}
-      <div className="container mx-auto px-4 pt-12 pb-4">
-        <p className="text-center text-sm text-gray-500 mb-6">Trusted By Ecommerce Partners & Affiliates</p>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          {/* Partner logos here */}
-        </div>
-      </div>
     </section>
   )
 }
