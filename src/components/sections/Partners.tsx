@@ -6,8 +6,10 @@ export default function Partners() {
     { name: "Stripe", path: "/partners/stripe.svg", width: 100 },
     { name: "Mastercard", path: "/partners/mastercard.svg", width: 60 },
     { name: "PayPal", path: "/partners/paypal.svg", width: 140 },
-    { name: "Google", path: "/partners/google.svg", width: 140 },
-    { name: "American Express", path: "/partners/amex.svg", width: 65 },
+    { name: "Microsoft", path: "/partners/microsoft.svg", width: 140 },
+    { name: "Visa", path: "/partners/visa.svg", width: 100 },
+    { name: "Meta", path: "/partners/meta.svg", width: 150 },
+    { name: "Claude", path: "/partners/claude.svg", width: 150 },
   ]
   
   return (
@@ -24,7 +26,7 @@ export default function Partners() {
                 src={partner.path}
                 alt={partner.name}
                 width={partner.width}
-                height={40}
+                height={50}
                 className="object-contain h-12 cursor-pointer"
                 priority
               />
